@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+            <h1 class="title">Hi, I'm Saba</h1>
+            <p class="subtitle">A Passionate Web Developer And 3D Modeler</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="image.png" alt="Your Photo" class="profile-pic">
+                <div>
+                    <p>  Hi, I'm Saba! 👋, I'm an aspiring programmer from Rustavi, Georgia, with a passion for Coding and 3D Modeling. Ever since I was young, 
+                        I've been captivated by exploring how things function—whether it was experimenting with devices, imagining life as an astronaut, or diving into the endless possibilities of the digital world.
+                        Today, I focus on developing my skills in web development and programming, aiming to become a professional in the field. I enjoy crafting modern websites with a touch of creativity, using tools like HTML, CSS, and JavaScript.</p>
+                    <p>In my free time, I love playing video games, listening to music, reading books, and diving into programming projects to expand my knowledge</p>
+                </div>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form onsubmit="handleSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Follow me on:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/saba.chachanidze.585" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/saba-chachanidze-339826348/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/SabaChachanidze" target="_blank">GitHub</a>
+            </div>
+            <p>&copy; 2025 Site. All Rights Reserved (Not really).</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('წარმატებით გაიგზავნა ინფორმაცია');
+        }
+    </script>
+</body>
+</html>
